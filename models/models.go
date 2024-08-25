@@ -98,26 +98,26 @@ type SomethingListRequest struct {
 
 // SomethingUpdate is a struct that represents a something update
 type SomethingUpdate struct {
-	SomethingInt    *int               `json:"int"`
-	SomethingString *string            `json:"string"`
-	SomethingBool   *bool              `json:"bool"`
-	SomethingFloat  *float64           `json:"float"`
-	SomethingArray  *[]string          `json:"array"`
-	SomethingMap    *map[string]string `json:"map"`
-	SomethingStruct *struct {
-		StructInt    *int    `json:"int"`
-		StructString *string `json:"string"`
+	SomethingInt    int               `json:"int"`
+	SomethingString string            `json:"string"`
+	SomethingBool   bool              `json:"bool"`
+	SomethingFloat  float64           `json:"float"`
+	SomethingArray  []string          `json:"array"`
+	SomethingMap    map[string]string `json:"map"`
+	SomethingStruct struct {
+		StructInt    int    `json:"int"`
+		StructString string `json:"string"`
 	} `json:"struct"`
-	SomethingPointer       *string     `json:"pointer"`
+	SomethingPointer       string     `json:"pointer"`
 	SomethingInterface     interface{} `json:"interface"`
-	SomethingSlice         *[]string   `json:"slice"`
-	SomethingSliceOfStruct *[]struct {
-		StructInt    *int    `json:"int"`
-		StructString *string `json:"string"`
+	SomethingSlice         []string   `json:"slice"`
+	SomethingSliceOfStruct []struct {
+		StructInt    int    `json:"int"`
+		StructString string `json:"string"`
 	} `json:"sliceOfStruct"`
 
-	SomethingId        *int `json:"id"`
-	SomethingTimestamp *int `json:"timestamp"`
+	SomethingId        int `json:"id"`
+	SomethingTimestamp int `json:"timestamp"`
 }
 
 type SomethingUpdateResponse struct {

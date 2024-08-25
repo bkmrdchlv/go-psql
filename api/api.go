@@ -12,7 +12,12 @@ func SetUpRouter(h handlers.Handler, cfg config.Config) (r *gin.Engine) {
 	// cors
 	r.Use(CORSMiddleware())
 
+	r.GET("/something_list", h.GetSomethingList)
+	r.GET("/something:id", h.GetSomethingByID)
 	r.POST("/something", h.CreateSomething)
+	r.PUT("/something", h.UpdateSomething)
+	r.PATCH("/something", h.PatchSomething)
+	r.DELETE("/something", h.DeleteSomething)
 
 	return
 }
