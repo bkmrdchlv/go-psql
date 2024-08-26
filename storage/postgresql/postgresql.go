@@ -33,9 +33,9 @@ func NewPostrgesqlConnection(ctx context.Context, cfg config.Config) (storage.St
 	configPsql.MaxConns = cfg.PostgresMaxConnections
 
 	db, err := pgxpool.ConnectConfig(ctx, configPsql)
-	// if err != nil {
-	// 	return nil, err
-	// }
+	if err != nil {
+		return nil, err
+	}
 
 	return &Store{
 		db: db,

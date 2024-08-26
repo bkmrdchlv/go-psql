@@ -6,7 +6,7 @@ type Something struct {
 	SomethingString string            `json:"string"`
 	SomethingBool   bool              `json:"bool"`
 	SomethingFloat  float64           `json:"float"`
-	SomethingArray  []string          `json:"array"`
+	SomethingArrray  []string          `json:"arrray"`
 	SomethingMap    map[string]string `json:"map"`
 	SomethingStruct struct {
 		StructInt    int    `json:"int"`
@@ -30,7 +30,7 @@ type SomethingCreate struct {
 	SomethingString string            `json:"string"`
 	SomethingBool   bool              `json:"bool"`
 	SomethingFloat  float64           `json:"float"`
-	SomethingArray  []string          `json:"array"`
+	SomethingArrray  []string          `json:"arrray"`
 	SomethingMap    map[string]string `json:"map"`
 	SomethingStruct struct {
 		StructInt    int    `json:"int"`
@@ -60,7 +60,7 @@ type SomethingRead struct {
 	SomethingString string            `json:"string"`
 	SomethingBool   bool              `json:"bool"`
 	SomethingFloat  float64           `json:"float"`
-	SomethingArray  []string          `json:"array"`
+	SomethingArrray  []string          `json:"arrray"`
 	SomethingMap    map[string]string `json:"map"`
 	SomethingStruct struct {
 		StructInt    int    `json:"int"`
@@ -102,7 +102,7 @@ type SomethingUpdate struct {
 	SomethingString string            `json:"string"`
 	SomethingBool   bool              `json:"bool"`
 	SomethingFloat  float64           `json:"float"`
-	SomethingArray  []string          `json:"array"`
+	SomethingArrray  []string          `json:"arrray"`
 	SomethingMap    map[string]string `json:"map"`
 	SomethingStruct struct {
 		StructInt    int    `json:"int"`
